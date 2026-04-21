@@ -65,7 +65,7 @@ label {
     /* Caja del contenido */
     .block-container {
         background-color: rgba(255, 255, 255, 0.9);
-        padding: 2rem;
+        padding: 1rem;
         border-radius: 12px;
     }
 
@@ -78,11 +78,11 @@ label {
     unsafe_allow_html=True
 )
 
-st.set_page_config(page_title="Reparto de Flores", page_icon="💐", layout="centered")
+st.set_page_config(page_title="Reparto de Flores", page_icon="💐", layout="wide")
 
 # Título principal
 
-st.markdown("<h1 style='text-align: center; color: #e75480;'>🌸 JEILAFLOR 🌸</h1>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: #e75480;'>🌸 JEILAFLOR 🌸</h2>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: center;'>Ramos y flor cortada para floristerías</h3>", unsafe_allow_html=True)
 
 st.divider()
@@ -147,7 +147,8 @@ st.divider()
 
 st.markdown("## 🌼 Nuestros productos")
 
-col1, col2 = st.columns(2)
+st.image("images/ramo.jpg", caption="Ramos de flores", use_container_width=True)
+st.image("images/cubo.jpg", caption="Flor cortada para floristerías", use_container_width=True)
 
 with col1:
     st.image("images/ramo.jpg", caption="Ramos de flores", use_container_width=True)
