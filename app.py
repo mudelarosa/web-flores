@@ -63,11 +63,11 @@ label {
     }
 
     /* Caja del contenido */
+@media (max-width: 768px) {
     .block-container {
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 1rem;
-        border-radius: 12px;
+        padding: 0.5rem;
     }
+}
 
     /* Texto oscuro */
     h1, h2, h3, h4, h5, h6, p, label, li {
@@ -147,14 +147,14 @@ st.divider()
 
 st.markdown("## 🌼 Nuestros productos")
 
-st.image("images/ramo.jpg", caption="Ramos de flores", use_container_width=True)
-st.image("images/cubo.jpg", caption="Flor cortada para floristerías", use_container_width=True)
+col1, col2 = st.columns(2)
 
 with col1:
     st.image("images/ramo.jpg", caption="Ramos de flores", use_container_width=True)
 
 with col2:
     st.image("images/cubo.jpg", caption="Flor cortada para floristerías", use_container_width=True)
+
 
 # Footer
 st.markdown("<p style='text-align: center;'>🌸 Flores frescas | Servicio rápido | Atención personalizada</p>", unsafe_allow_html=True)
